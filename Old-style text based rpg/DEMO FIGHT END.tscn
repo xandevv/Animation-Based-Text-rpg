@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://bat.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Dead bat.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Text.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Fight hp.tscn" type="PackedScene" id=4]
+[ext_resource path="res://DEMO FIGHT END.gd" type="Script" id=5]
+[ext_resource path="res://SCENE ANIM.tscn" type="PackedScene" id=6]
+
+[sub_resource type="Animation" id=1]
+resource_name = "BATDEAD"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Bat:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.968627, 0.968627, 0.968627, 1 ), Color( 0.866667, 0.12549, 0.12549, 0.901961 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="DEMO FIGHT END" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="Dead bat" parent="." instance=ExtResource( 2 )]
+autoplay = "BATDEAD"
+anims/BATDEAD = SubResource( 1 )
+
+[node name="Bat" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.968627, 0.968627, 0.968627, 1 )
+
+[node name="Text" parent="." instance=ExtResource( 3 )]
+text = "good job! thanks for  playing   the TUTORIAL"
+
+[node name="Fight hp" parent="." instance=ExtResource( 4 )]
+text = "YOUR HP 100                                                                                                                                                                                                                                                                                        ENEMY HP 0"
+
+[node name="SCENE ANIM" parent="." instance=ExtResource( 6 )]
+[connection signal="animation_finished" from="Dead bat" to="." method="_on_Dead_bat_animation_finished"]

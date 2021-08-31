@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Castle_-Door-Medieval-Castle-Wood-Door-Close-Castle_-Drawbridge-Stone-Doors.wav" type="AudioStream" id=1]
+
+[node name="Door sound" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Castle_-Door-Medieval-Castle-Wood-Door-Close-Castle_-Drawbridge-Stone-Doors.wav-f847c11223b035e01a6deb2012796f32.sample"
+
+[deps]
+
+source_file="res://Castle_-Door-Medieval-Castle-Wood-Door-Close-Castle_-Drawbridge-Stone-Doors.wav"
+dest_files=[ "res://.import/Castle_-Door-Medieval-Castle-Wood-Door-Close-Castle_-Drawbridge-Stone-Doors.wav-f847c11223b035e01a6deb2012796f32.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

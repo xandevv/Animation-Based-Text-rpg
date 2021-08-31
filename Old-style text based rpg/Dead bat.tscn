@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "BAT DEAD"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Bat:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.968627, 0.968627, 0.968627, 1 ), Color( 0.866667, 0.12549, 0.12549, 0.901961 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="Dead bat" type="AnimationPlayer"]
+autoplay = "BAT DEAD"
+"anims/BAT DEAD" = SubResource( 1 )

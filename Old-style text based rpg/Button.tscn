@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Text font.tres" type="DynamicFont" id=1]
+
+[node name="Button" type="Button"]
+margin_left = 312.0
+margin_top = 351.0
+margin_right = 416.0
+margin_bottom = 374.0
+custom_fonts/font = ExtResource( 1 )
+text = "Sword slash"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

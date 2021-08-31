@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Text font.tres" type="DynamicFont" id=1]
+
+[node name="Fight hp" type="Label"]
+margin_top = 424.0
+margin_right = 720.0
+margin_bottom = 441.0
+custom_fonts/font = ExtResource( 1 )
+text = "YOUR HP                                                                                                                                                                                                                                                                                                      ENEMY HP"
+__meta__ = {
+"_edit_use_anchors_": false
+}
